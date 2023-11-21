@@ -1,0 +1,48 @@
+/*letra aplicada a toda la pagina*/
+*{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+/*modificacion del nav*/
+nav{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*modificando los enlaces dentro del nav*/
+nav>a{
+    text-decoration: none;
+    color:black;
+}
+/*cuando el cursor esta sobre el enlace el ultimo se pone verde*/
+a:hover{
+    color:green;
+}
+/*los enlaces con el target que han sido visitados se ponen de un color*/
+a[target_blank]:visited{
+    color:orange;
+}
+/*los enlaces dentro del nav tienen una flecha que los apunta*/
+nav>a::after{ 
+    content: "<--";
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+/*modificando los h1*/
+h1{
+    color:black;
+    background-color: red;
+    text-align: center;
+}
+/*modificando el segundo p dentro de un h2*/
+h2>p:nth-child(2){
+    font-size: 16px;
+}
+/*Pagina d'audios*/
+.subtit{
+    font-weight: bolder;
+}
+/*Pagina de videos*/
+#vid2{
+    float: right;
+    padding-left: 100px;
+    margin-left: 100px;
+}
